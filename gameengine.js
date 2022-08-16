@@ -70,17 +70,14 @@ class GameEngine {
         }
     };
 
-    flopingLine() {
+    flopingLine(canvas) {
         var collapseArr = this.entities;
         var centerXDot = 0;
         var centerYDot = 0;
         var flop;
         var delay = 1000 / 60;
         var pTimestamp = [];
-
-
-        var canvas = document.getElementById('gameWorld');
-        var ctx = canvas.getContext('2d');
+        const ctx = canvas;
 
         function tick(timestamp) {
             var progress = timestamp - delay;

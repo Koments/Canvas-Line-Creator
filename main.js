@@ -13,6 +13,6 @@ ASSET_MANAGER.downloadAll(function () {
     gameEngine.start();
 
     button.addEventListener('click', () => {
-        gameEngine.flopingLine(line);
+        gameEngine.flopingLine(ctx);
     })
 });
